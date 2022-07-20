@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+  </head>
+  <body>
+    <p>
+      <label>Grams</label>
+      <input
+        id="inputGrams"
+        type="number"
+        placeholder="Grams"
+        oninput="weightConverter(this.value)"
+        onchange="weightConverter(this.value)"
+      />
+    </p>
+    <p>KiloGrams: <span id="outputKiloGrams"></span></p>
+    <script src="script.js"></script>
+  </body>
+</html>
